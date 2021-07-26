@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imageURL" : "https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg",
+        "imageTitle" : "Image 1",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    },
+    {
+        "id": 2,
+        "imageURL" : "https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg",
+        "imageTitle" : "Image 2",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    },
+    {
+        "id": 3,
+        "imageURL" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU",
+        "imageTitle" : "Image 3",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    },
+    {
+        "id": 4,
+        "imageURL" : "https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg",
+        "imageTitle" : "Image 4",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    },
+    {
+        "id": 5,
+        "imageURL" : "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1",
+        "imageTitle" : "Image 5",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    },
+    {
+        "id": 6,
+        "imageURL" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU",
+        "imageTitle" : "Image 6",
+        "imageInfo" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aperiam numquam possimus sequinisi inus, alias quisquam animi facere illo!"
+    }
+]
