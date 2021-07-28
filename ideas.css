@@ -17,6 +17,25 @@
   border: 2px solid rgb(117, 117, 117);
 }
 
+.ideasContainer :hover {
+  background-color: var(--themecolor);
+  opacity: 0.9;
+}
+
+.ideasContainer :hover .items {
+  border: 2px solid var(--themecolor);
+  opacity: 0.9;
+}
+.ideasContainer :hover .items h2,
+p {
+  color: black;
+}
+.ideasContainer :hover button {
+  border: 2px solid black;
+  color: black;
+  background-color: var(--themecolor);
+}
+
 .items img {
   width: 100%;
   height: 205px;
