@@ -17,9 +17,9 @@ body {
   background-color: var(--thirdColor);
 }
 
-.navbar {
+/* .navbar {
   display: none;
-}
+} */
 
 .showcase {
   position: relative;
