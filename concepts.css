@@ -492,7 +492,7 @@ body {
     display: none;
   }
   .related_title {
-    width: 96%;
+    width: 92%;
   }
   .related_images img {
     padding: 0 10px;
@@ -527,7 +527,9 @@ body {
     margin: 0px;
     padding-left: 15px;
   }
-
+  .related_title {
+    width: 96%;
+  }
   .related_images img {
     max-width: 185px;
     height: 130px;
