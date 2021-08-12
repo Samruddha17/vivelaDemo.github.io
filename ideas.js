@@ -23,21 +23,35 @@ async function renderIdeas() {
   ideas.forEach((idea) => {
     console.log(idea.id);
     let htmlSegment = `<div class="itemContainer">
-        <div class="items">
-            <img src="${idea.imageURL}" alt="">
-            <div class="imageInfo">
-                <h2>${idea.imageTitle}</h2>
-                <p>${idea.imageInfo}</p>
-                <button>Read More</button>
-            </div>
-         </div>
-    </div>`;
+      <div class="items" id="${idea.id}">
+          <img src="${idea.imageURL}" alt="">
+          <div class="imageInfo">
+              <h2>${idea.imageTitle}</h2>
+              <p>${idea.imageInfo}</p>
+              <button onclick="blogOpen(this.id)" id="${idea.id}">Read More</button>
+          </div>
+       </div>
+  </div>`;
 
     html += htmlSegment;
   });
 
   let container = document.querySelector(".ideasContainer");
   container.innerHTML = html;
+}
+
+function blogOpen(clicked) {
+  document.querySelector(".blogContainer").style.display = "block";
+
+  var infoClick = document.getElementById(clicked);
+  var imageLink = infoClick.children[0].getAttribute("src");
+  var infoHeading = infoClick.querySelector(".imageInfo").children[0].innerText;
+  var infoData = infoClick.querySelector(".imageInfo").children[1].innerText;
+
+  var blogShow = document.querySelector(".blogPopup");
+  var blogHeading = (blogShow.children[0].innerHTML += infoHeading);
+  var blogContent = (blogShow.children[2].innerHTML += infoData);
+  console.log(blogContent);
 }
 
 renderIdeas();

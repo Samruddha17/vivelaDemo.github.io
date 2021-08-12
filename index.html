@@ -1,4 +1,3 @@
-<!-- using NEVE Theme in WORDPRESS -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <link href="index.css" rel="stylesheet">
 </head>
 
-<body class="no-scroll-on-popup">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid">
             <img src="https://cdn4.vectorstock.com/i/thumb-large/53/58/letter-v-green-leaf-logo-vector-19145358.jpg"
                 style="width: 75px;height: 55px;">
-            <a class="navbar-brand" href="index.html">Vivela Stars</a>
+            <a class="navbar-brand" href="/">Vivela Stars</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +28,7 @@
                         <a class="nav-link " aria-current="page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">Concepts</a>
+                        <a class="nav-link " href="concepts.html">Concepts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="ideas.html">Ideas</a>
@@ -45,262 +44,66 @@
         </div>
     </nav>
 
-    <h2 style="margin: auto; width: fit-content; padding-top: 15px;">THE CONCEPTS</h2>
-    <div class="concept_nav">
-        <span class="item active" data-name="concept1">Concept 01</span>
-        <hr>
-        <span class="item" data-name="concept2">Concept 02</span>
-        <hr>
-        <span class="item" data-name="concept3">Concept 03</span>
-        <hr>
-        <span class="item" data-name="concept4">Concept 04</span>
-        <hr>
-        <span class="item" data-name="concept5">Concept 05</span>
-    </div>
-    <div class="images_container ">
-        <div class="image_item" id="1" onclick="popClick(this.id)" data-name="concept1">
-            <img src="https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
+    <section class="showcase">
+        <div class="video_container">
+            <video src="videos/home.mp4" autoplay muted loop></video>
         </div>
-        <div class="image_item" id="2" onclick="popClick(this.id)" data-name="concept2">
-            <img
-                src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
+        <div class="video_content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, cumque?</h3>
         </div>
-        <div class="image_item" id="3" onclick="popClick(this.id)" data-name="concept3">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="4" onclick="popClick(this.id)" data-name="concept4">
-            <img
-                src="https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="5" onclick="popClick(this.id)" data-name="concept5">
-            <img
-                src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="6" onclick="popClick(this.id)" data-name="concept1">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
+    </section>
 
+    <div class="cards_container">
+        <div class="cards" id="cards">
+            <div class="cardItem">
+                <img src="https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg">
+                <div class="card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
+            <div class="cardItem">
+                <img
+                    src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg">
+                <div class=" card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
+            <div class="cardItem">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU">
+                <div class="card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
+            <div class="cardItem">
+                <img
+                    src="https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg">
+                <div class="card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
+            <div class="cardItem">
+                <img
+                    src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1">
+                <div class="card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
+            <div class="cardItem">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU">
+                <div class="card_content">
+                    <h3>Proj name - Client</h3>
+                </div>
+            </div>
 
-
-        <div class="image_item" id="7" onclick="popClick(this.id)" data-name="concept1">
-            <img src="https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="8" onclick="popClick(this.id)" data-name="concept2">
-            <img
-                src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="9" onclick="popClick(this.id)" data-name="concept3">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="10" onclick="popClick(this.id)" data-name="concept4">
-            <img
-                src="https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="11" onclick="popClick(this.id)" data-name="concept5">
-            <img
-                src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="12" onclick="popClick(this.id)" data-name="concept1">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="13" onclick="popClick(this.id)" data-name="concept1">
-            <img src="https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="14" onclick="popClick(this.id)" data-name="concept2">
-            <img
-                src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="15" onclick="popClick(this.id)" data-name="concept3">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="16" onclick="popClick(this.id)" data-name="concept4">
-            <img
-                src="https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="17" onclick="popClick(this.id)" data-name="concept5">
-            <img
-                src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="18" onclick="popClick(this.id)" data-name="concept1">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="19" onclick="popClick(this.id)" data-name="concept1">
-            <img src="https://cdn.wallpapersafari.com/68/90/Y3dAMQ.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="20" onclick="popClick(this.id)" data-name="concept2">
-            <img
-                src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/3/7/w600X390/Take_in_the_Scenery.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="21" onclick="popClick(this.id)" data-name="concept3">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW9a-QPZ_VsMF3ZrIhT35fqgNnTDA7k4F-hlhpMPD_2oGzmNv_kVtrvrI4CHn4365Go0&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="22" onclick="popClick(this.id)" data-name="concept4">
-            <img
-                src="https://thumbs.dreamstime.com/b/amazing-misty-autumn-scenery-lake-sorapis-dolomites-italy-beautiful-mountains-colorful-yellow-larches-shore-193683774.jpg">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="23" onclick="popClick(this.id)" data-name="concept5">
-            <img
-                src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/01/scenery.jpg?fit=969%2C546&ssl=1">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
-        </div>
-        <div class="image_item" id="24" onclick="popClick(this.id)" data-name="concept1">
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XgiRmpYtS287pSAiLpuSzEr4pCzKgoz9LQ&usqp=CAU">
-            <div class="hover_title">
-                <h2>Proj Name - Client</h2>
-            </div>
         </div>
     </div>
 
-    <div class="footer ">
-        <button class="privacy">PRIVACY POLICY</button>
-        <p><span style="border: 1px solid black;padding-left: 5px;"> n </span><span>of</span> <span
-                style="border: 1px solid black;padding: 0 5px;"> g</span></p>
-    </div>
-
-    <div class="popup_container " id="pop">
-        <div class="popup_box" id="popup_box" style="background-color: #ffffff; display: flex; flex-direction: column;">
-            <div class="pop_heading">
-                <h3>The Summer Tale</h3>
-                <img style="margin-top: 10px; margin-right: 10px;" onclick="closePop()" class="cross"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/LetterX.svg/1200px-LetterX.svg.png">
-            </div>
-            <div class="next_prev">
-                <div class="arrow_left" id="prev"
-                    style="cursor: pointer; margin: 0px 15px; position: absolute; left: 0px;">
-                    <i class="arrow left"></i>
-                    <span>Previous Concept Name</span>
-                </div>
-                <div class="arrow_right" id="next"
-                    style="cursor: pointer; margin: 0px 12px; position: absolute; right: 0px;">
-                    <span>Next Concept Name</span>
-                    <i class="arrow right"></i>
-                </div>
-            </div>
-            <div class="dynamicContent" id="dynamicContent">
-                <div class="popup_img"></div>
-                <div class="image_content">
-                    <div class="content_left">
-                        <h3>OVERVIEW</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat vel nemo neque,
-                            consectetur
-                            illum
-                            excepturi asperiores unde est odit, sit laudantium facilis adipisci doloribus nostrum rerum!
-                            Ratione, porro aspernatur.</p>
-                    </div>
-                    <div class="content_right">
-                        <h3>CLIENT</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <h3>URL</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    </div>
-                </div>
-                <hr style="margin: 0px;" class="line">
-                <div class="related_container">
-                    <h3>RELATED CONCEPTS</h3>
-                    <div class="related_images">
-                        <div class="related_items">
-                            <img src="https://wallpaperaccess.com/full/2559942.jpg">
-                            <div class="related_title">
-                                <h4>Proj Name - Client</h4>
-                            </div>
-                        </div>
-                        <div class="related_items" id="non_phone">
-                            <img
-                                src="http://4.bp.blogspot.com/-8O0ZkAgb6Bo/Ulf_80tUN6I/AAAAAAAAH34/I1L2lKjzE9M/s1600/Beautiful-Scenery-Wallpapers.jpg">
-                            <div class="related_title">
-                                <h4>Proj Name - Client</h4>
-                            </div>
-                        </div>
-                        <div class="related_items" id="non_ipad">
-                            <img
-                                src="https://readingielts.b-cdn.net/wp-content/uploads/2021/03/IELTS-Speaking-Part-1-Topic-Scenery-1.png">
-                            <div class="related_title">
-                                <h4>Proj Name - Client</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button onclick="closePop()" class="pop_close">CLOSE</button>
-        </div>
-    </div>
 </body>
+
+<script src="https://kit.fontawesome.com/9778fff1da.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
