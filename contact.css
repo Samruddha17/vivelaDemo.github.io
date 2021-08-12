@@ -49,6 +49,22 @@
   background-color: var(--themecolor);
 }
 
+.footer {
+  padding: 20px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.privacy {
+  border: none;
+  font-size: 17px;
+}
+
+.footer span {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 770px) {
   .formRow {
     flex-direction: column;

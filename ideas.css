@@ -87,6 +87,22 @@ p {
   height: 100%;
 }
 
+.footer {
+  padding: 20px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.privacy {
+  border: none;
+  font-size: 17px;
+}
+
+.footer span {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1065px) {
   .itemContainer {
     width: calc(100% / 3);
