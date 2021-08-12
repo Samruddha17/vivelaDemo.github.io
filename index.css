@@ -17,10 +17,6 @@ body {
   background-color: var(--thirdColor);
 }
 
-/* .navbar {
-  display: none;
-} */
-
 .showcase {
   position: relative;
   height: 100vh;
