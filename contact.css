@@ -1,3 +1,9 @@
+:root {
+  --themecolor: #c1e280;
+  --secondColor: #12a512;
+  --thirdColor: #a9d171;
+}
+
 .formContainer {
   padding: 20px;
   margin: auto;
