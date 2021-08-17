@@ -69,7 +69,7 @@ body {
 .cards {
   position: absolute;
   left: 0px;
-  transition: left 2s ease-in-out;
+  transition: left 1.2s ease-in-out;
   top: 0xp;
   display: grid;
   grid-template-columns: repeat(6, 350px);
