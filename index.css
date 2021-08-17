@@ -17,6 +17,10 @@ body {
   background-color: var(--thirdColor);
 }
 
+/* .navbar {
+  display: none;
+} */
+
 .showcase {
   position: relative;
   height: 100vh;
@@ -54,7 +58,7 @@ body {
 .cards_container {
   position: relative;
   margin: auto;
-  width: 90%;
+  width: 1180px;
   height: 410px;
   overflow: hidden;
   padding: 70px 0px;
@@ -65,11 +69,17 @@ body {
 .cards {
   position: absolute;
   left: 0px;
+  transition: left 2s ease-in-out;
   top: 0xp;
   display: grid;
   grid-template-columns: repeat(6, 350px);
   grid-gap: 50px;
   pointer-events: none;
+  padding-left: 25px;
+}
+
+.transi {
+  transition: none;
 }
 
 .cards img {
@@ -84,4 +94,32 @@ body {
 
 .cardItem h3 {
   padding-top: 10px;
+}
+
+@media screen and (max-width: 1065px) {
+  .cards_container {
+    width: 780px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .cards_container {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards_container {
+    width: 300px;
+    margin: none;
+  }
+  .cards {
+    grid-template-columns: repeat(6, 300px);
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .cards_container {
+    width: 280px;
+  }
 }
