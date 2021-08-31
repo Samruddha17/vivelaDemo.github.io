@@ -11,6 +11,41 @@ body {
   overflow: visible;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(48 143 47);
+}
+
+.nav-item a:active {
+  background-color: var(--secondColor);
+}
+.nav-item a:focus {
+  background-color: var(--secondColor);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  border: 0px;
+}
+
+#mobile {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-expand-lg {
+  justify-content: space-between;
+}
+
+#bigScreen {
+  padding-left: 11rem;
+}
+
 .scrolling {
   overflow: hidden;
 }
@@ -330,7 +365,7 @@ body {
 }
 
 /* Responsive */
-@media screen and (max-width: 1500px) and (min-width: 1075px) {
+@media screen and (max-width: 1500px) and (min-width: 992px) {
   .popup_img {
     max-width: 760px;
     margin: auto;
@@ -354,8 +389,26 @@ body {
     width: 92%;
   }
 }
+/* @media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: static;
+  }
+} */
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 992px) {
+  #mobile {
+    display: block;
+  }
+  #bigScreen {
+    display: none;
+  }
+  #notForMobile {
+    display: none;
+  }
+  .navbar > form {
+    display: none;
+  }
+
   .images_container {
     display: flex;
     flex-wrap: wrap;
@@ -492,7 +545,7 @@ body {
     display: none;
   }
   .related_title {
-    width: 94%;
+    width: 92%;
   }
   .related_images img {
     padding: 0 10px;
@@ -527,9 +580,11 @@ body {
     margin: 0px;
     padding-left: 15px;
   }
+
   .related_title {
-    width: 92%;
+    width: 96%;
   }
+
   .related_images img {
     max-width: 185px;
     height: 130px;

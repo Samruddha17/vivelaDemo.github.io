@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
+
+
     <section class="showcase">
         <div class="video_container">
             <video src="videos/home.mp4" autoplay muted loop></video>
@@ -70,44 +72,57 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <div class="container-fluid">
-            <img src="https://cdn4.vectorstock.com/i/thumb-large/53/58/letter-v-green-leaf-logo-vector-19145358.jpg"
-                style="width: 75px;height: 55px;">
-            <a class="navbar-brand" href="/">Vivela Stars</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="concepts.html">Concepts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="ideas.html">Ideas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn btn-outline-success">Sign Up</button>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" id="mobile">WE & OUR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills  nav-fill">
+                <li class="nav-item dropdown" id="notMobile">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+                        WE & OUR
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">About</a>
+                        <a class="dropdown-item" href="concepts.html">Concepts</a>
+                        <a class="dropdown-item" href="ideas.html">Ideas</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="mobile">
+                    <a class="nav-link">About</a>
+                </li>
+                <li class="nav-item" id="mobile">
+                    <a class="nav-link" href="concepts.html">Concepts</a>
+                </li>
+                <li class="nav-item" id="mobile">
+                    <a class="nav-link" href="ideas.html">Ideas</a>
+                </li>
+                <li class="nav-item" id="mobile">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
         </div>
+
     </nav>
 
+    <div class="home_logo">
+        <img src="https://cdn4.vectorstock.com/i/thumb-large/53/58/letter-v-green-leaf-logo-vector-19145358.jpg">
+        <h5>Lorem ipsum dolor sit amet consectetur </h5>
+    </div>
 </body>
 
 <script src="https://kit.fontawesome.com/9778fff1da.js" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 
 <script src="index.js"></script>
 

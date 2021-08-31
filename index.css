@@ -17,10 +17,6 @@ body {
   background-color: var(--thirdColor);
 }
 
-/* .navbar {
-  display: none;
-} */
-
 .showcase {
   position: relative;
   height: 100vh;
@@ -96,9 +92,54 @@ body {
   padding-top: 10px;
 }
 
+.home_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.home_logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(48 143 47);
+}
+
+.nav-item a:active {
+  background-color: var(--secondColor);
+}
+.nav-item a:focus {
+  background-color: var(--secondColor);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+nav {
+  display: block;
+}
+
+#mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1065px) {
   .cards_container {
     width: 780px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #mobile {
+    display: block;
+  }
+  #notMobile {
+    display: none;
   }
 }
 
