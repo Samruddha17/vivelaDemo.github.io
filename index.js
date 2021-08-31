@@ -8,7 +8,7 @@ cardsContainer.addEventListener("mouseup", () => {
   cardsContainer.style.cursor = "grab";
 });
 
-window.addEventListener("mouseup", () => {
+cardsContainer.addEventListener("mouseup", () => {
   cards.classList.remove("transi");
   console.log(posX2);
   for (i = 0; i < 5; i++) {
